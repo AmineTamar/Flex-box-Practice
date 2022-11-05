@@ -11,7 +11,7 @@ body{
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #a1c3ff;
+  background:#40434E;
 }
 img{
   max-width: 100%;
@@ -28,21 +28,21 @@ ul{
   padding: 0 30px;
 }
 .navbar{
-  background: #3474e6;
-  color: #fff;
+  background: #080705;
+  color:#FFFFFA;
 }
 .navbar .logo{
   font-size: x-large;
   font-weight: bold;
 }
 .navbar a{
-  color: #fff;
+  color: #FFFFFA;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
 .navbar a:hover{
-  color:lightblue ;
+  color:#912F40;
 }
 .navbar .container{
   display: flex;
@@ -57,3 +57,59 @@ ul{
 .navbar ul li {
   margin-left: 20px;
 }
+
+.header{
+  display: flex;
+  
+  background-color: #702632;
+  color:#FFFFFA;
+  min-height: 400px;
+}
+.header h1{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header img{
+  margin-left: 50px;
+  max-width: 400px;
+  object-fit: cover;
+}
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.boxes .container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.box{
+  
+  flex: 1;
+  background: #912F40;
+  color: #FFFFFA;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+  padding:  15px 20px;
+
+}
+.box i{
+  margin-right: 10px;
+}
+
+@media(max-width:786px)
+{
+  .header .container{
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+.boxes .container{
+  display: block;
+text-align: center;}
